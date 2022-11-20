@@ -1,9 +1,9 @@
-package org.jraf.graphqlresume.experience
+package org.jraf.graphqlresume.skills
 
-import org.jraf.graphqlresume.experience.model.Language
-import org.jraf.graphqlresume.experience.model.Resume
-import org.jraf.graphqlresume.experience.model.Url
-import org.jraf.graphqlresume.experience.repository.ExperienceRepository
+import org.jraf.graphqlresume.skills.model.Language
+import org.jraf.graphqlresume.skills.model.Resume
+import org.jraf.graphqlresume.skills.model.Url
+import org.jraf.graphqlresume.skills.repository.SkillsRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
@@ -13,13 +13,13 @@ import org.springframework.graphql.execution.RuntimeWiringConfigurer
 import org.springframework.stereotype.Controller
 
 @SpringBootApplication
-class ExperienceApplication
+class SkillsApplication
 
 @Controller
-class ExperienceController {
+class SkillsController {
   @QueryMapping
   fun resume(@Argument language: Language): Resume {
-    return ExperienceRepository.getResume(language)
+    return SkillsRepository.getResume(language)
   }
 }
 
@@ -34,7 +34,6 @@ class GraphQlConfig {
   }
 }
 
-
 fun main(args: Array<String>) {
-  runApplication<ExperienceApplication>(*args)
+  runApplication<SkillsApplication>(*args)
 }

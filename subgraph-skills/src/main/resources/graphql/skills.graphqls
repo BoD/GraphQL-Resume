@@ -1,0 +1,29 @@
+enum Language {
+    EN
+    FR
+}
+
+type SkillItem {
+    description: String!
+}
+
+type SkillCategory {
+    name: String!
+    items: [SkillItem!]!
+}
+
+scalar Url
+
+type MiscItem {
+    description: String!
+    links: [Url!]!
+}
+
+type Resume {
+    skills: [SkillCategory!]!
+    misc: [MiscItem!]!
+}
+
+type Query {
+    resume(language: Language!): Resume!
+}

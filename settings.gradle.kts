@@ -9,4 +9,5 @@ rootProject.name = "graphql-resume"
 include(
   "subgraph-identity",
   "subgraph-experience",
+  "subgraph-skills",
 )

@@ -14,3 +14,7 @@ subgraphs:
     routing_url: http://localhost:8082/graphql
     schema:
       file: ../subgraph-experience/src/main/resources/graphql/experience.graphqls
+  skills:
+    routing_url: http://localhost:8083/graphql
+    schema:
+      file: ../subgraph-skills/src/main/resources/graphql/skills.graphqls
