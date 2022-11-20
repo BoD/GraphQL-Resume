@@ -1,0 +1,16 @@
+# Generate the supergraph schema with this command:
+#
+# rover supergraph compose --config ./resume-supergraph-rover-config.yaml > resume-supergraph.graphqls
+#
+# See https://www.apollographql.com/docs/federation/quickstart/local-composition/#1-provide-subgraph-details
+
+federation_version: 2
+subgraphs:
+  identity:
+    routing_url: http://localhost:8081/graphql
+    schema:
+      file: ../subgraph-identity/src/main/resources/graphql/identity.graphqls
+  experience:
+    routing_url: http://localhost:8082/graphql
+    schema:
+      file: ../subgraph-experience/src/main/resources/graphql/experience.graphqls

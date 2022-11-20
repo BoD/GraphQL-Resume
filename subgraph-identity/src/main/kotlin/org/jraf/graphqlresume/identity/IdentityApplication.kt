@@ -16,7 +16,7 @@ import org.springframework.graphql.execution.RuntimeWiringConfigurer
 import org.springframework.stereotype.Controller
 
 @SpringBootApplication
-class GraphqlResumeApplication
+class IdentityApplication
 
 @Controller
 class IdentityController {
@@ -45,5 +45,5 @@ class GraphQlConfig {
 
 
 fun main(args: Array<String>) {
-  runApplication<GraphqlResumeApplication>(*args)
+  runApplication<IdentityApplication>(*args)
 }

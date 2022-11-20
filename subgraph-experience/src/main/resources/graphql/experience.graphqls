@@ -1,0 +1,44 @@
+enum Language {
+    EN
+    FR
+}
+
+type PeriodStartDate {
+    date: String!
+}
+
+type PeriodEndDate {
+    """Null means the period is still ongoing"""
+    date: String
+}
+
+type Period {
+    start: PeriodStartDate!
+    end: PeriodEndDate!
+}
+
+scalar Url
+
+type Organization {
+    name: String!
+    description: String!
+    location: String!
+    website: Url
+    moreInfo: String
+}
+
+type ExperienceItem {
+    description: String!
+}
+
+type Experience {
+    period: Period!
+    jobTitle: String!
+    organization: Organization!
+    items: [ExperienceItem!]!
+    environment: [String!]!
+}
+
+type Query {
+    experience(language: Language!): [Experience!]!
+}
