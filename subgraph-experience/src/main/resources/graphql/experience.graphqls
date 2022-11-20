@@ -39,6 +39,10 @@ type Experience {
     environment: [String!]!
 }
 
+type Resume {
+    experience: [Experience!]!
+}
+
 type Query {
-    experience(language: Language!): [Experience!]!
+    resume(language: Language!): Resume!
 }

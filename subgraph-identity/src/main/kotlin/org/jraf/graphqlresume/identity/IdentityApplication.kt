@@ -2,9 +2,9 @@ package org.jraf.graphqlresume.identity
 
 import org.jraf.graphqlresume.identity.model.Date
 import org.jraf.graphqlresume.identity.model.Email
-import org.jraf.graphqlresume.identity.model.Identity
 import org.jraf.graphqlresume.identity.model.Language
 import org.jraf.graphqlresume.identity.model.Meta
+import org.jraf.graphqlresume.identity.model.Resume
 import org.jraf.graphqlresume.identity.repository.IdentityRepository
 import org.jraf.graphqlresume.identity.repository.MetaRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -21,8 +21,8 @@ class IdentityApplication
 @Controller
 class IdentityController {
   @QueryMapping
-  fun identity(@Argument language: Language): Identity {
-    return IdentityRepository.getIdentity(language)
+  fun resume(@Argument language: Language): Resume {
+    return IdentityRepository.getResume(language)
   }
 
   @QueryMapping

@@ -7,6 +7,7 @@ import org.jraf.graphqlresume.experience.model.Organization
 import org.jraf.graphqlresume.experience.model.Period
 import org.jraf.graphqlresume.experience.model.PeriodEndDate
 import org.jraf.graphqlresume.experience.model.PeriodStartDate
+import org.jraf.graphqlresume.experience.model.Resume
 
 object ExperienceRepository {
   private val englishExperience = listOf(
@@ -54,10 +55,13 @@ object ExperienceRepository {
 
   private val frenchExperience = englishExperience
 
-  fun getExperience(language: Language): List<Experience> {
+  private val englishResume = Resume(englishExperience)
+  private val frenchResume = Resume(frenchExperience)
+
+  fun getResume(language: Language): Resume {
     return when (language) {
-      Language.EN -> englishExperience
-      Language.FR -> frenchExperience
+      Language.EN -> englishResume
+      Language.FR -> frenchResume
     }
   }
 }

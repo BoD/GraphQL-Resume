@@ -5,6 +5,7 @@ import org.jraf.graphqlresume.identity.model.Identity
 import org.jraf.graphqlresume.identity.model.Language
 import org.jraf.graphqlresume.identity.model.Nationality
 import org.jraf.graphqlresume.identity.model.PhoneNumber
+import org.jraf.graphqlresume.identity.model.Resume
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
@@ -28,6 +29,10 @@ object IdentityRepository {
     address = Address(listOf("19 avenue de Choisy apt 4024", "75013", "Paris")),
   )
 
+  private val englishResume = Resume(englishIdentity)
+  private val frenchResume = Resume(frenchIdentity)
+
+  @Suppress("SameParameterValue")
   private fun getAge(birthDate: Date): Int {
     val birth = Calendar.getInstance().apply { time = birthDate }
     val today = Calendar.getInstance()
@@ -36,10 +41,10 @@ object IdentityRepository {
     return age
   }
 
-  fun getIdentity(language: Language): Identity {
+  fun getResume(language: Language): Resume {
     return when (language) {
-      Language.EN -> englishIdentity
-      Language.FR -> frenchIdentity
+      Language.EN -> englishResume
+      Language.FR -> frenchResume
     }
   }
 }

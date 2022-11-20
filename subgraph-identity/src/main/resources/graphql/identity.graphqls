@@ -34,7 +34,11 @@ type Meta {
     lastModified: Date!
 }
 
+type Resume {
+    identity: Identity!
+}
+
 type Query {
-    identity(language: Language!): Identity
+    resume(language: Language!): Resume!
     meta: Meta
 }

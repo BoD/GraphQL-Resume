@@ -1,7 +1,7 @@
 package org.jraf.graphqlresume.experience
 
-import org.jraf.graphqlresume.experience.model.Experience
 import org.jraf.graphqlresume.experience.model.Language
+import org.jraf.graphqlresume.experience.model.Resume
 import org.jraf.graphqlresume.experience.model.Url
 import org.jraf.graphqlresume.experience.repository.ExperienceRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -18,8 +18,8 @@ class ExperienceApplication
 @Controller
 class IdentityController {
   @QueryMapping
-  fun experience(@Argument language: Language): List<Experience> {
-    return ExperienceRepository.getExperience(language)
+  fun resume(@Argument language: Language): Resume {
+    return ExperienceRepository.getResume(language)
   }
 }
 
