@@ -1,0 +1,40 @@
+scalar Date
+scalar Email
+
+enum Language {
+    EN
+    FR
+}
+
+enum Nationality {
+    FRANCE
+}
+
+type PhoneNumber {
+    countryCode: Int
+    number: String!
+}
+
+type Address{
+    addressLines: [String!]!
+}
+
+type Identity {
+    firstName: String!
+    lastName: String!
+    birthDate: Date!
+    age: Int!
+    nationality: Nationality!
+    email: Email!
+    phoneNumber: PhoneNumber!
+    address: Address!
+}
+
+type Meta {
+    lastModified: Date!
+}
+
+type Query {
+    identity(language: Language!): Identity
+    meta: Meta
+}
