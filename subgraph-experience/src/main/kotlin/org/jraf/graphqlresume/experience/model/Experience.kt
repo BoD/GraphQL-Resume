@@ -10,7 +10,7 @@ data class Organization(
   val name: String,
   val description: String,
   val location: String,
-  val website: String?,
+  val website: String? = null,
   val moreInfo: String? = null,
 )
 
