@@ -5,6 +5,7 @@ plugins {
 	id("io.spring.dependency-management")
 	kotlin("jvm")
 	kotlin("plugin.spring")
+	application
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_17
@@ -28,4 +29,8 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+application {
+	mainClass.set("org.jraf.graphqlresume.education.EducationApplicationKt")
 }

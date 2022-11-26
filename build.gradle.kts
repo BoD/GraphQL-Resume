@@ -15,3 +15,7 @@ allprojects {
   }
 }
 
+tasks.register<Exec>("dockerBuild") {
+  dependsOn(subprojects.map { it.tasks.named("installDist") })
+  commandLine("docker", "build", "--platform", "linux/amd64", "-t", "bodlulu/graphql-resume", ".")
+}
