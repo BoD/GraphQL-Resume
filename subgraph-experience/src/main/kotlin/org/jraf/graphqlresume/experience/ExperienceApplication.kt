@@ -1,10 +1,12 @@
 package org.jraf.graphqlresume.experience
 
+import com.apollographql.federation.graphqljava.Federation
 import org.jraf.graphqlresume.experience.model.Language
 import org.jraf.graphqlresume.experience.model.Resume
 import org.jraf.graphqlresume.experience.model.Url
 import org.jraf.graphqlresume.experience.repository.ExperienceRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.graphql.GraphQlSourceBuilderCustomizer
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.graphql.data.method.annotation.Argument
@@ -32,8 +34,19 @@ class GraphQlConfig {
         .scalar(Url)
     }
   }
-}
 
+  @Bean
+  fun federationTransform(): GraphQlSourceBuilderCustomizer {
+    return GraphQlSourceBuilderCustomizer { builder ->
+      builder.schemaFactory { registry, wiring ->
+        Federation.transform(registry, wiring)
+          .fetchEntities { null }
+          .resolveEntityType { null }
+          .build()
+      }
+    }
+  }
+}
 
 fun main(args: Array<String>) {
   runApplication<ExperienceApplication>(*args)

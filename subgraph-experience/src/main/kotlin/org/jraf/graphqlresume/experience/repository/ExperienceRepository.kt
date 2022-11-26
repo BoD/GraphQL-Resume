@@ -18,10 +18,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Android Expert",
       organization = Organization(
-        name = "Qonto",
-        description = "neobank",
-        website = "https://qonto.com/",
-        location = "Paris, France",
+        id = "en.qonto",
       ),
       items = listOf(
         ExperienceItem("New features and maintenance on the Qonto banking app."),
@@ -50,11 +47,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Android Developer",
       organization = Organization(
-        name = "LESS",
-        description = "software publisher",
-        website = "https://www.blablacar.com/",
-        location = "Paris, France",
-        moreInfo = "now part of BlaBlaCar",
+        id = "en.less",
       ),
       items = listOf(
         ExperienceItem("Development of the LESS app, a peer-to-peer ridesharing service."),
@@ -90,10 +83,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Android Developer",
       organization = Organization(
-        name = "Blackpills",
-        description = "media company",
-        website = "https://www.blackpills.com/",
-        location = "Paris, France",
+        id = "en.blackpills",
       ),
       items = listOf(
         ExperienceItem("Development of the Blackpills app, a browser and player for original mini series meant for mobile consumption."),
@@ -121,11 +111,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Lead Android Developer",
       organization = Organization(
-        name = "Family And Co.",
-        description = "software publisher",
-        website = "https://www.familywall.com/index.html?noautologin",
-        location = "Paris, France",
-        moreInfo = "as freelance",
+        id = "en.familyandco",
       ),
       items = listOf(
         ExperienceItem("Development on the FamilyWall app, which helps users organize, communicate and share contents within their family."),
@@ -158,9 +144,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Lead Android Developer",
       organization = Organization(
-        name = "Plizy",
-        description = "software publisher",
-        location = "Paris, France",
+        id = "en.plizy",
       ),
       items = listOf(
         ExperienceItem("Development of the Plizy app for tablets, a video aggregator / player."),
@@ -192,10 +176,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Android and Backend Developer",
       organization = Organization(
-        name = "Vox Mobili",
-        description = "software publisher",
-        website = "http://www.voxmobili.com/",
-        location = "Paris, France",
+        id = "en.voxmobili",
       ),
       items = listOf(
         ExperienceItem("Development on the Phonebook 2.0 app for Android, a synchronized and social address book."),
@@ -227,10 +208,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Java Developer",
       organization = Organization(
-        name = "Oalia",
-        description = "software publisher",
-        website = "http://www.oalia.com/",
-        location = "Suresnes, France",
+        id = "en.oalia",
       ),
       items = listOf(
         ExperienceItem("Maintained and enhanced the in-house Framework."),
@@ -262,10 +240,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Java Developer",
       organization = Organization(
-        name = "Pegasis",
-        description = "IT services and software publisher",
-        website = "http://www.pegasis.fr/",
-        location = "Paris, France",
+        id = "en.pegasis",
       ),
       items = listOf(
         ExperienceItem("Development on web applications (internet/intranet) for customers: France Télécom, l'Apec, Casino, Le Mémorial de la Shoah, Planète TP."),
@@ -292,10 +267,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Java Developer",
       organization = Organization(
-        name = "Icom Informatique",
-        description = "software publisher",
-        website = "http://www.quotium.com/",
-        location = "Charenton, France",
+        id = "en.icom",
       ),
       items = listOf(
         ExperienceItem("Development on the web and Swing applications."),
@@ -326,10 +298,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Expert Android",
       organization = Organization(
-        name = "Qonto",
-        description = "néobanque à Paris",
-        website = "https://qonto.com/",
-        location = "Paris, France",
+        id = "fr.qonto",
       ),
       items = listOf(
         ExperienceItem("Nouvelles fonctionnalités et maintenance sur l'appli bancaire Qonto."),
@@ -358,10 +327,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Développeur Android",
       organization = Organization(
-        name = "LESS",
-        description = "maintenant BlaBlaCar, éditeur de logiciels à Paris",
-        website = "https://www.less.com/",
-        location = "Paris, France",
+        id = "fr.less",
       ),
       items = listOf(
         ExperienceItem("Développement de l'appli LESS, un service de covoiturage urbain instantané."),
@@ -397,10 +363,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Développeur Android",
       organization = Organization(
-        name = "Blackpills",
-        description = "société de médias à Paris",
-        website = "https://www.blackpills.com/",
-        location = "Paris, France",
+        id = "fr.blackpills",
       ),
       items = listOf(
         ExperienceItem("Développement de l'appli Blackpills, permettant de découvrir et visionner des mini séries originales à consommer sur mobile."),
@@ -428,10 +391,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Lead Développeur Android",
       organization = Organization(
-        name = "Family And Co.",
-        description = "éditeur de logiciels à Paris - en freelance",
-        website = "https://www.familywall.com/index.html?noautologin",
-        location = "Paris, France",
+        id = "fr.familyandco",
       ),
       items = listOf(
         ExperienceItem("Développement sur l'appli FamilyWall qui aide à s'organiser, communiquer et partager en famille."),
@@ -464,10 +424,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Lead Développeur Android",
       organization = Organization(
-        name = "Plizy",
-        description = "éditeur de logiciels à Paris",
-        website = "http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/",
-        location = "Paris, France",
+        id = "fr.plizy",
       ),
       items = listOf(
         ExperienceItem("Développement de l'appli Plizy pour tablettes, un agrégateur personnalisé et player vidéo."),
@@ -499,10 +456,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Développeur Android et Backend",
       organization = Organization(
-        name = "Vox Mobili",
-        description = "éditeur de logiciels à Paris",
-        website = "http://www.voxmobili.com/",
-        location = "Paris, France",
+        id = "fr.voxmobili",
       ),
       items = listOf(
         ExperienceItem("Développement sur l'appli Phonebook 2.0 pour Android, un carnet d'adresses synchronisé et social."),
@@ -534,10 +488,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Développeur Java",
       organization = Organization(
-        name = "Oalia",
-        description = "éditeur de logiciels à Suresnes",
-        website = "http://www.oalia.com/",
-        location = "Suresnes, France",
+        id = "fr.oalia",
       ),
       items = listOf(
         ExperienceItem("Maintenance et évolutions sur le Framework interne."),
@@ -569,10 +520,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Développeur Java",
       organization = Organization(
-        name = "Pegasis",
-        description = "SSII et éditeur de logiciels à Paris",
-        website = "http://www.pegasis.fr/",
-        location = "Paris, France",
+        id = "fr.pegasis",
       ),
       items = listOf(
         ExperienceItem("Développement d'applications Web (internet/intranet) pour les clients : France Télécom, l'Apec, Casino, Le Mémorial de la Shoah, Planète TP."),
@@ -599,10 +547,7 @@ object ExperienceRepository {
       ),
       jobTitle = "Développeur Java",
       organization = Organization(
-        name = "Icom Informatique",
-        description = "éditeur de logiciels à Charenton",
-        website = "http://www.quotium.com/",
-        location = "Charenton, France",
+        id = "fr.icom",
       ),
       items = listOf(
         ExperienceItem("Développement sur les applications web et Swing."),

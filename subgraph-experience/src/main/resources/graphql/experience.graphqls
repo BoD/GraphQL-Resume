@@ -19,12 +19,8 @@ type Period {
 
 scalar Url
 
-type Organization {
-    name: String!
-    description: String!
-    location: String!
-    website: Url
-    moreInfo: String
+type Organization @key(fields: "id") {
+    id: ID!
 }
 
 type ExperienceItem {

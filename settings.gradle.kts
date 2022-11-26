@@ -11,4 +11,5 @@ include(
   "subgraph-experience",
   "subgraph-skills",
   "subgraph-education",
+  "subgraph-organizations",
 )

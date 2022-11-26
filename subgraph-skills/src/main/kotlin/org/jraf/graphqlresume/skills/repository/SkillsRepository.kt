@@ -107,7 +107,7 @@ object SkillsRepository {
         description = "Reading (science, science-fiction), cinema, music (bass guitar), geocaching.",
       ),
       MiscItem(
-        description = "A few hobby Android apps (Play Store) and pet projects (Github).",
+        description = "A few hobby Android apps (Play Store) and pet projects (GitHub).",
         links = listOf(
           "https://play.google.com/store/apps/developer?id=BoD",
           "https://github.com/BoD?tab=repositories&type=source",
@@ -123,7 +123,7 @@ object SkillsRepository {
         description = "Lectures (science, science-fiction), cinéma, musique (guitare basse), geocaching.",
       ),
       MiscItem(
-        description = "Quelques applis Android \"hobby\" (Play Store) et projets persos (Github).",
+        description = "Quelques applis Android \"hobby\" (Play Store) et projets persos (GitHub).",
         links = listOf(
           "https://play.google.com/store/apps/developer?id=BoD",
           "https://github.com/BoD?tab=repositories&type=source",

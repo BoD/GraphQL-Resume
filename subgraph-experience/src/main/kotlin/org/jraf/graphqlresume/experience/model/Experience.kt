@@ -7,11 +7,7 @@ data class PeriodEndDate(val date: String?)
 data class Period(val start: PeriodStartDate, val end: PeriodEndDate)
 
 data class Organization(
-  val name: String,
-  val description: String,
-  val location: String,
-  val website: String? = null,
-  val moreInfo: String? = null,
+  val id: String,
 )
 
 data class ExperienceItem(val description: String)
