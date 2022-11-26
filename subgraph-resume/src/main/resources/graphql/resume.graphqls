@@ -1,0 +1,113 @@
+enum Language {
+    EN
+    FR
+}
+
+type PeriodStartDate {
+    date: String!
+}
+
+type PeriodEndDate {
+    """Null means the period is still ongoing"""
+    date: String
+}
+
+type Period {
+    start: PeriodStartDate!
+    end: PeriodEndDate!
+}
+
+type Year {
+    year: String
+}
+
+union PeriodOrYear = Period | Year
+
+scalar Url
+
+type Organization @key(fields: "id") {
+    id: ID!
+}
+
+type ExperienceItem {
+    description: String!
+}
+
+type Experience {
+    period: Period!
+    jobTitle: String!
+    organization: Organization!
+    items: [ExperienceItem!]!
+    environment: [String!]!
+}
+
+type Institution {
+    name: String!
+    location: String!
+    website: Url!
+}
+
+type EducationEntry {
+    periodOrYear: PeriodOrYear!
+    degree: String!
+    institution: Institution
+    moreInfo: String
+}
+
+scalar Date
+scalar Email
+
+enum Nationality {
+    FRANCE
+}
+
+type PhoneNumber {
+    countryCode: Int
+    number: String!
+}
+
+type Address{
+    addressLines: [String!]!
+}
+
+type Identity {
+    firstName: String!
+    lastName: String!
+    birthDate: Date!
+    age: Int!
+    nationality: Nationality!
+    email: Email!
+    phoneNumber: PhoneNumber!
+    address: Address!
+}
+
+type SkillItem {
+    description: String!
+}
+
+type SkillCategory {
+    name: String!
+    items: [SkillItem!]!
+}
+
+type MiscItem {
+    description: String!
+    links: [Url!]!
+}
+
+type Meta {
+    lastModified: Date!
+}
+
+type Resume {
+    experience: [Experience!]!
+    education: [EducationEntry!]!
+    identity: Identity!
+    skills: [SkillCategory!]!
+    misc: [MiscItem!]!
+}
+
+type Query {
+    meta: Meta
+    resume(language: Language!): Resume!
+}

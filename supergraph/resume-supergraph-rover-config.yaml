@@ -6,23 +6,11 @@
 
 federation_version: 2
 subgraphs:
-  identity:
-    routing_url: http://localhost:8081/graphql
-    schema:
-      file: ../subgraph-identity/src/main/resources/graphql/identity.graphqls
-  experience:
+  resume:
     routing_url: http://localhost:8082/graphql
     schema:
-      file: ../subgraph-experience/src/main/resources/graphql/experience.graphqls
+      file: ../subgraph-resume/src/main/resources/graphql/resume.graphqls
   organizations:
     routing_url: http://localhost:8085/graphql
     schema:
       file: ../subgraph-organizations/src/main/resources/graphql/organizations.graphqls
-  skills:
-    routing_url: http://localhost:8083/graphql
-    schema:
-      file: ../subgraph-skills/src/main/resources/graphql/skills.graphqls
-  education:
-    routing_url: http://localhost:8084/graphql
-    schema:
-      file: ../subgraph-education/src/main/resources/graphql/education.graphqls

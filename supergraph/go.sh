@@ -15,16 +15,10 @@ if [ ! -f router ]; then
 fi
 
 # Run the subgraphs in background
-../subgraph-education/build/install/subgraph-education/bin/subgraph-education &
-sleep 2
-../subgraph-experience/build/install/subgraph-experience/bin/subgraph-experience &
-sleep 2
-../subgraph-identity/build/install/subgraph-identity/bin/subgraph-identity &
-sleep 2
+../subgraph-resume/build/install/subgraph-resume/bin/subgraph-resume &
+sleep 5
 ../subgraph-organizations/build/install/subgraph-organizations/bin/subgraph-organizations &
-sleep 2
-../subgraph-skills/build/install/subgraph-skills/bin/subgraph-skills &
-sleep 2
+sleep 5
 
 
 # Run the router
