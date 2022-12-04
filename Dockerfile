@@ -23,4 +23,6 @@ RUN mv /app/router /app/supergraph/router
 
 EXPOSE 4000
 
+ENV MALLOC_ARENA_MAX=4
+
 ENTRYPOINT ["/bin/bash", "-c", "cd supergraph && ./go.sh"]
