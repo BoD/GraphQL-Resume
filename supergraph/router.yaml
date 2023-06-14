@@ -1,2 +1,13 @@
 supergraph:
   listen: 0.0.0.0:4000
+# Send telemetry to 100% of requests
+# See https://www.apollographql.com/docs/router/configuration/apollo-telemetry#trace-sampling-rate
+telemetry:
+  apollo:
+    field_level_instrumentation_sampler: 1
+  tracing:
+    trace_config:
+      sampler: 1
+# See https://www.apollographql.com/docs/router/configuration/cors
+cors:
+  allow_any_origin: true

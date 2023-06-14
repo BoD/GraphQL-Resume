@@ -1,6 +1,7 @@
 package org.jraf.graphqlresume.resume
 
 import com.apollographql.federation.graphqljava.Federation
+import com.apollographql.federation.graphqljava.tracing.FederatedTracingInstrumentation
 import org.jraf.graphqlresume.resume.model.Date
 import org.jraf.graphqlresume.resume.model.Email
 import org.jraf.graphqlresume.resume.model.Language
@@ -55,6 +56,9 @@ class GraphQlConfig {
           .resolveEntityType { null }
           .build()
       }
+        // Enable field level tracing
+        // See https://www.apollographq.com/docs/router/configuration/apollo-telemetry/
+        .instrumentation(listOf(FederatedTracingInstrumentation()))
     }
   }
 }

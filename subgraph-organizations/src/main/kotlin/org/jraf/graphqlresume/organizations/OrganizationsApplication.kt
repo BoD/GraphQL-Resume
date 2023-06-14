@@ -2,6 +2,7 @@ package org.jraf.graphqlresume.organizations
 
 import com.apollographql.federation.graphqljava.Federation
 import com.apollographql.federation.graphqljava._Entity
+import com.apollographql.federation.graphqljava.tracing.FederatedTracingInstrumentation
 import graphql.schema.DataFetcher
 import graphql.schema.TypeResolver
 import org.jraf.graphqlresume.organizations.model.Organization
@@ -54,6 +55,9 @@ class GraphQlConfig {
           .resolveEntityType(entityTypeResolver)
           .build()
       }
+        // Enable field level tracing
+        // See https://www.apollographql.com/docs/router/configuration/apollo-telemetry/
+        .instrumentation(listOf(FederatedTracingInstrumentation()))
     }
   }
 }
