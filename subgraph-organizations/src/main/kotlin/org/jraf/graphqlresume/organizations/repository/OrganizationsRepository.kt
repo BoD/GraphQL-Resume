@@ -5,6 +5,13 @@ import org.jraf.graphqlresume.organizations.model.Organization
 object OrganizationsRepository {
   private val organizations = listOf(
     Organization(
+      id = "en.apollo",
+      name = "Apollo GraphQL",
+      description = "software publisher",
+      website = "https://apollographql.com/",
+      location = "San Francisco, USA",
+    ),
+    Organization(
       id = "en.qonto",
       name = "Qonto",
       description = "neobank",
@@ -17,7 +24,8 @@ object OrganizationsRepository {
       description = "software publisher",
       website = "https://www.blablacar.com/",
       location = "Paris, France",
-      moreInfo = "now part of BlaBlaCar",
+      moreInfoPlain = "now part of BlaBlaCar",
+      moreInfoHtml = "now part of <a href=\"https://www.blablacar.com/\">BlaBlaCar</a>",
     ),
     Organization(
       id = "en.blackpills",
@@ -32,7 +40,7 @@ object OrganizationsRepository {
       description = "software publisher",
       website = "https://www.familywall.com/index.html?noautologin",
       location = "Paris, France",
-      moreInfo = "as freelance",
+      moreInfoPlain = "as freelance",
     ),
     Organization(
       id = "en.plizy",
@@ -72,6 +80,13 @@ object OrganizationsRepository {
     ),
 
     Organization(
+      id = "fr.apollo",
+      name = "Apollo GraphQL",
+      description = "éditeur de logiciels",
+      website = "https://apollographql.com/",
+      location = "San Francisco, USA",
+    ),
+    Organization(
       id = "fr.qonto",
       name = "Qonto",
       description = "néobanque",
@@ -85,7 +100,8 @@ object OrganizationsRepository {
       description = "éditeur de logiciels",
       website = "https://www.less.com/",
       location = "Paris",
-      moreInfo = "fait maintenant partie de BlaBlaCar",
+      moreInfoPlain = "acquis par BlaBlaCar",
+      moreInfoHtml = "acquis par <a href=\"https://www.blablacar.com/\">BlaBlaCar</a>",
     ),
 
     Organization(
@@ -102,7 +118,7 @@ object OrganizationsRepository {
       description = "éditeur de logiciels",
       website = "https://www.familywall.com/index.html?noautologin",
       location = "Paris",
-      moreInfo = "en tant que freelance",
+      moreInfoPlain = "en tant que freelance",
     ),
 
     Organization(

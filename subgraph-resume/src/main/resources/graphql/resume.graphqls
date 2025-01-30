@@ -1,61 +1,32 @@
-enum Language {
-    EN
-    FR
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key"])
+
+type Query {
+    meta: Meta
+    resume(language: Language!): Resume!
 }
 
-type PeriodStartDate {
-    date: String!
+type Meta {
+    lastModified: Date!
 }
 
-type PeriodEndDate {
-    """Null means the period is still ongoing"""
-    date: String
+type Resume {
+    identity: Identity!
+    experience: [Experience!]!
+    education: [EducationEntry!]!
+    skills: [SkillCategory!]!
+    misc: [MiscItem!]!
 }
 
-type Period {
-    start: PeriodStartDate!
-    end: PeriodEndDate!
+type Identity {
+    firstName: String!
+    lastName: String!
+    birthDate: Date!
+    age: Int!
+    nationality: Nationality!
+    email: Email!
+    phoneNumber: PhoneNumber!
+    address: Address!
 }
-
-type Year {
-    year: String
-}
-
-union PeriodOrYear = Period | Year
-
-scalar Url
-
-type Organization @key(fields: "id") {
-    id: ID!
-}
-
-type ExperienceItem {
-    description: String!
-}
-
-type Experience {
-    period: Period!
-    jobTitle: String!
-    organization: Organization!
-    items: [ExperienceItem!]!
-    environment: [String!]!
-}
-
-type Institution {
-    name: String!
-    location: String!
-    website: Url!
-}
-
-type EducationEntry {
-    periodOrYear: PeriodOrYear!
-    degree: String!
-    institution: Institution
-    moreInfo: String
-}
-
-scalar Date
-scalar Email
 
 enum Nationality {
     FRANCE
@@ -70,19 +41,54 @@ type Address{
     addressLines: [String!]!
 }
 
-type Identity {
-    firstName: String!
-    lastName: String!
-    birthDate: Date!
-    age: Int!
-    nationality: Nationality!
-    email: Email!
-    phoneNumber: PhoneNumber!
-    address: Address!
+type Experience {
+    period: Period!
+    jobTitle: String!
+    organization: Organization!
+    items: [ExperienceItem!]!
+    environment: [String!]!
 }
 
-type SkillItem {
-    description: String!
+type Period {
+    start: PeriodStartDate!
+    end: PeriodEndDate!
+}
+
+type PeriodStartDate {
+    date: String!
+}
+
+type PeriodEndDate {
+    """Null means the period is still ongoing"""
+    date: String
+}
+
+type Organization @key(fields: "id") {
+    id: ID!
+}
+
+type ExperienceItem {
+    description(format: TextFormat! = PLAIN_TEXT): String!
+}
+
+type EducationEntry {
+    periodOrYear: PeriodOrYear!
+    degree: String!
+    institution: Institution
+    moreInfo(format: TextFormat! = PLAIN_TEXT): String
+}
+
+type Institution {
+    name: String!
+    moreInfo: String
+    location: String!
+    website: Url!
+}
+
+union PeriodOrYear = Period | Year
+
+type Year {
+    year: String
 }
 
 type SkillCategory {
@@ -90,24 +96,25 @@ type SkillCategory {
     items: [SkillItem!]!
 }
 
-type MiscItem {
+type SkillItem {
     description: String!
+}
+
+type MiscItem {
+    description(format: TextFormat! = PLAIN_TEXT): String!
     links: [Url!]!
 }
 
-type Meta {
-    lastModified: Date!
+enum Language {
+    EN
+    FR
 }
 
-type Resume {
-    experience: [Experience!]!
-    education: [EducationEntry!]!
-    identity: Identity!
-    skills: [SkillCategory!]!
-    misc: [MiscItem!]!
+enum TextFormat {
+    PLAIN_TEXT
+    HTML
 }
 
-type Query {
-    meta: Meta
-    resume(language: Language!): Resume!
-}
+scalar Url
+scalar Date
+scalar Email

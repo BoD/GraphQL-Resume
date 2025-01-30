@@ -1,12 +1,17 @@
 extend schema @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key", "@inaccessible"])
 
-scalar Url
-
 type Organization @key(fields: "id") {
     id: ID! @inaccessible
     name: String!
     description: String!
     location: String!
     website: Url
-    moreInfo: String
+    moreInfo(format: TextFormat! = PLAIN_TEXT): String
 }
+
+enum TextFormat {
+    PLAIN_TEXT
+    HTML
+}
+
+scalar Url

@@ -21,7 +21,8 @@ object EducationRepository {
         location = "Paris, France",
         website = "http://www.epita.fr/",
       ),
-      moreInfo = "Information Systems / Software Engineering option",
+      moreInfoPlain = "Information Systems & Software Engineering option",
+      moreInfoHtml = "<a href=\"http://sigl.epita.fr/\">Information Systems &amp; Software Engineering</a> option",
     ),
     EducationEntry(
       periodOrYear = Period(
@@ -34,13 +35,13 @@ object EducationRepository {
         location = "France",
         website = "http://www.uvsq.fr/",
       ),
-      moreInfo = "Software Engineering option",
+      moreInfoPlain = "Software Engineering option",
     ),
     EducationEntry(
       periodOrYear = Year("1996"),
       degree = "Baccalauréat",
       institution = null,
-      moreInfo = "Science series, Mathematics option",
+      moreInfoPlain = "Science series, Mathematics option",
     ),
   )
 
@@ -56,7 +57,8 @@ object EducationRepository {
         location = "Paris",
         website = "http://www.epita.fr/",
       ),
-      moreInfo = "Spécialité Systèmes d'Information / Génie Logiciel",
+      moreInfoPlain = "Spécialité Systèmes d'Information / Génie Logiciel",
+      moreInfoHtml = "<a href=\"http://sigl.epita.fr/\">Spécialité Systèmes d'Information / Génie Logiciel</a>",
     ),
     EducationEntry(
       periodOrYear = Period(
@@ -69,13 +71,13 @@ object EducationRepository {
         location = "Vélizy",
         website = "http://www.uvsq.fr/",
       ),
-      moreInfo = "Option Génie Informatique",
+      moreInfoPlain = "Option Génie Informatique",
     ),
     EducationEntry(
       periodOrYear = Year("1996"),
       degree = "Baccalauréat général",
       institution = null,
-      moreInfo = "Série Scientifique, option Mathématiques",
+      moreInfoPlain = "Série Scientifique, option Mathématiques",
     ),
   )
 

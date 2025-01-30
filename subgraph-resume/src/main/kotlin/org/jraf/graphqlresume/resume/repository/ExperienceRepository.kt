@@ -12,15 +12,48 @@ object ExperienceRepository {
   private val englishExperience = listOf(
     Experience(
       period = Period(
-        start = PeriodStartDate("Sep. 2018"),
+        start = PeriodStartDate("Oct. 2021"),
         end = PeriodEndDate(null),
+      ),
+      jobTitle = "Staff Engineer, Android",
+      organization = Organization(
+        id = "en.apollo",
+      ),
+      items = listOf(
+        ExperienceItem(
+          descriptionPlain = "New features and maintenance on the open source project Apollo Kotlin, a GraphQL client library.",
+          descriptionHtml = "New features and maintenance on the open source project <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, a GraphQL client library.",
+        ),
+        ExperienceItem("Library used by major Android apps: Netflix, X, Reddit, GitHub, ..."),
+        ExperienceItem("Development of a plugin for Android Studio / IntelliJ."),
+        ExperienceItem("Focus on the caching features and performance."),
+        ExperienceItem("Team of 2 developers, with contributions from the community."),
+      ),
+      environment = listOf(
+        "GraphQL",
+        "Kotlin Multiplatform",
+        "Gradle",
+        "Code generation",
+        "SQLDelight",
+        "Android Studio / IntelliJ",
+        "Coroutines",
+      ),
+    ),
+
+    Experience(
+      period = Period(
+        start = PeriodStartDate("2018"),
+        end = PeriodEndDate("2021"),
       ),
       jobTitle = "Android Expert",
       organization = Organization(
         id = "en.qonto",
       ),
       items = listOf(
-        ExperienceItem("New features and maintenance on the Qonto banking app."),
+        ExperienceItem(
+          descriptionPlain = "New features and maintenance on the Qonto banking app.",
+          descriptionHtml = "New features and maintenance on the <a href=\"https://qonto.com/\">Qonto</a> banking app.",
+        ),
         ExperienceItem("Strong focus on architecture; core modules and services; keeping the codebase maintainable, clean and modern; team best practices and documentation; newcomer training; tooling; R&D; etc."),
         ExperienceItem("Team grew from 3 to 10 developers."),
       ),
@@ -51,10 +84,8 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem("Development of the LESS app, a peer-to-peer ridesharing service."),
         ExperienceItem("Started from scratch with another Android developer, and worked from the inception to the publication on the Play Store, and on the maintenance / new features of the app."),
-        ExperienceItem("Setup an MVVM architecture using Arch components."),
         ExperienceItem("Implemented turn by turn navigation / GPS (incl. voice instructions) features."),
         ExperienceItem("Strong focus on real time messaging aspects (PubNub, FCM.)"),
-        ExperienceItem("At BlaBlaCar: new features and maintenance on the BlaBlaCar Daily app."),
       ),
       environment = listOf(
         "Android",
@@ -85,7 +116,10 @@ object ExperienceRepository {
         id = "en.blackpills",
       ),
       items = listOf(
-        ExperienceItem("Development of the Blackpills app, a browser and player for original mini series meant for mobile consumption."),
+        ExperienceItem(
+          descriptionPlain = "Development of the Blackpills app, a browser and player for original mini series meant for mobile consumption.",
+          descriptionHtml = "Development of the <a href=\"https://play.google.com/store/apps/details?id=com.blackpills\">Blackpills</a> app, a browser and player for original mini series meant for mobile consumption.",
+        ),
         ExperienceItem("Started from scratch with 2 other Android developers (full Kotlin)."),
         ExperienceItem("Strong focus on the UI/UX."),
         ExperienceItem("Worked on payment, ads, offline mode (video download), and more."),
@@ -113,7 +147,10 @@ object ExperienceRepository {
         id = "en.familyandco",
       ),
       items = listOf(
-        ExperienceItem("Development on the FamilyWall app, which helps users organize, communicate and share contents within their family."),
+        ExperienceItem(
+          descriptionPlain = "Development on the FamilyWall app, which helps users organize, communicate and share contents within their family.",
+          descriptionHtml = "Development on the <a href=\"https://play.google.com/store/apps/details?id=com.familywall\">FamilyWall</a> app, which helps users organize, communicate and share contents within their family.",
+        ),
         ExperienceItem("Strong focus on the UI/UX."),
         ExperienceItem("Implemented a full-featured calendar with month and next events views."),
         ExperienceItem("Communication with the REST/JSON API."),
@@ -146,7 +183,11 @@ object ExperienceRepository {
         id = "en.plizy",
       ),
       items = listOf(
-        ExperienceItem("Development of the Plizy app for tablets, a video aggregator / player."),
+        ExperienceItem(
+          descriptionPlain = "Development of the Plizy app for tablets, a video aggregator / player.",
+          descriptionHtml = "Development of the <a href=\"https://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/\">Plizy</a> app for tablets, a video aggregator / player.",
+
+          ),
         ExperienceItem("Started from scratch and was responsible for the project from the inception to the publication on the Play Store."),
         ExperienceItem("Communication with the REST/JSON API."),
         ExperienceItem("Developed a video player using a VideoView or a WebView depending on the provider (YouTube, Vimeo, Dailymotion, etc.)"),
@@ -181,8 +222,6 @@ object ExperienceRepository {
         ExperienceItem("Development on the Phonebook 2.0 app for Android, a synchronized and social address book."),
         ExperienceItem("Designed and implemented a generic engine that integrates with social networks (Twitter, Facebook, LinkedIn, MySpace, etc.) and managed developers implementing connectors using this engine."),
         ExperienceItem("Implemented presence / chat features using the RCS protocol."),
-        ExperienceItem("Server-side development on the PIM product (synchronized address book, calendar, tasks, pictures / videos, etc.)"),
-        ExperienceItem("Customized the software for customers: T-Mobile, Bouygues Telecom, Orange, Telstra."),
       ),
       environment = listOf(
         "Android",
@@ -209,27 +248,8 @@ object ExperienceRepository {
       organization = Organization(
         id = "en.oalia",
       ),
-      items = listOf(
-        ExperienceItem("Maintained and enhanced the in-house Framework."),
-        ExperienceItem("Development on the OSRM / OSPM v3 and v4 products (spend management software.)"),
-        ExperienceItem("Designed and implemented the Supplier Portal module (remote application communicating using Web Services.)"),
-      ),
-      environment = listOf(
-        "Java",
-        "J2EE",
-        "Hibernate",
-        "Turbine",
-        "Velocity",
-        "Ajax",
-        "SOAP",
-        "Axis",
-        "Oracle",
-        "Tomcat",
-        "Weblogic",
-        "Subversion",
-        "Maven",
-        "Eclipse",
-      ),
+      items = emptyList(),
+      environment = emptyList(),
     ),
 
     Experience(
@@ -241,22 +261,8 @@ object ExperienceRepository {
       organization = Organization(
         id = "en.pegasis",
       ),
-      items = listOf(
-        ExperienceItem("Development on web applications (internet/intranet) for customers: France Télécom, l'Apec, Casino, Le Mémorial de la Shoah, Planète TP."),
-        ExperienceItem("Used Pegasis' internal framework (MVC2 model) and Délia CMS."),
-      ),
-      environment = listOf(
-        "Java",
-        "J2EE (JSP/Servlets/Taglibs)",
-        "Tiles",
-        "SQL",
-        "Oracle",
-        "CVS",
-        "Tomcat",
-        "Ant",
-        "IntelliJ",
-        "Eclipse",
-      ),
+      items = emptyList(),
+      environment = emptyList(),
     ),
 
     Experience(
@@ -268,28 +274,42 @@ object ExperienceRepository {
       organization = Organization(
         id = "en.icom",
       ),
-      items = listOf(
-        ExperienceItem("Development on the web and Swing applications."),
-        ExperienceItem("Ported a scripting language interpreter to Java."),
-      ),
-      environment = listOf(
-        "Java",
-        "JSP/Servlets",
-        "Applets",
-        "Swing",
-        "Java web start",
-        "JavaCC",
-        "XML",
-        "LDAP",
-        "SSL",
-        "Visual SourceSafe",
-        "Ant",
-        "IntelliJ",
-      ),
+      items = emptyList(),
+      environment = emptyList(),
     ),
   )
 
   private val frenchExperience = listOf(
+    Experience(
+      period = Period(
+        start = PeriodStartDate("Oct. 2021"),
+        end = PeriodEndDate(null),
+      ),
+      jobTitle = "Staff Engineer, Android",
+      organization = Organization(
+        id = "fr.apollo",
+      ),
+      items = listOf(
+        ExperienceItem(
+          descriptionPlain = "Nouvelles fonctionnalités et maintenance sur le projet open source Apollo Kotlin, une librarie client GraphQL.",
+          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur le projet open source <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, une librairie client GraphQL.",
+        ),
+        ExperienceItem("Librairie utilisée par des applis Android majeures: Netflix, X, Reddit, Deezer, ..."),
+        ExperienceItem("Développement d'un plugin pour Android Studio / IntelliJ."),
+        ExperienceItem("Concentration sur les fonctionnalités de cache et la performance."),
+        ExperienceItem("Équipe de 2 développeurs, avec des contributions de la communauté."),
+      ),
+      environment = listOf(
+        "GraphQL",
+        "Kotlin Multiplatform",
+        "Gradle",
+        "Génération de code",
+        "SQLDelight",
+        "Android Studio / IntelliJ",
+        "Coroutines",
+      ),
+    ),
+
     Experience(
       period = Period(
         start = PeriodStartDate("Sep. 2018"),
@@ -300,8 +320,11 @@ object ExperienceRepository {
         id = "fr.qonto",
       ),
       items = listOf(
-        ExperienceItem("Nouvelles fonctionnalités et maintenance sur l'appli bancaire Qonto."),
-        ExperienceItem("Concentration sur l'architecture ; le socle, les modules et services core ; garder la codebase maintenable, propre et moderne ; bonne pratiques de l'équipe et documentation ; formation des nouvelles recrues ; outillage ; R&D; etc."),
+        ExperienceItem(
+          descriptionPlain = "Nouvelles fonctionnalités et maintenance sur l'appli bancaire Qonto.",
+          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur l'appli bancaire <a href=\"https://qonto.com/\">Qonto</a>.",
+        ),
+        ExperienceItem("Concentration sur l'architecture ; le socle, les modules et services core ; garder la codebase maintenable, propre et moderne ; bonnes pratiques de l'équipe et documentation ; formation des nouvelles recrues ; outillage ; R&D; etc."),
         ExperienceItem("Équipe ayant évolué de 3 à 10 développeurs."),
       ),
       environment = listOf(
@@ -331,10 +354,8 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem("Développement de l'appli LESS, un service de covoiturage urbain instantané."),
         ExperienceItem("Responsabilité du projet avec un autre développeur, de la mise en place jusqu'à la publication sur le Play Store puis sur la maintenance / nouvelles fonctionnalités."),
-        ExperienceItem("Mise en place d'une architecture MVVM utilisant Arch components."),
         ExperienceItem("Implémentation d'un GPS / système de navigation turn by turn (y compris instructions vocales)."),
         ExperienceItem("Aspect communication temps réel très important (PubNub, FCM)."),
-        ExperienceItem("Chez BlaBlaCar : nouvelles fonctionnalités et maintenance sur l'appli BlaBlaCar Daily."),
       ),
       environment = listOf(
         "Android",
@@ -365,7 +386,10 @@ object ExperienceRepository {
         id = "fr.blackpills",
       ),
       items = listOf(
-        ExperienceItem("Développement de l'appli Blackpills, permettant de découvrir et visionner des mini séries originales à consommer sur mobile."),
+        ExperienceItem(
+          descriptionPlain = "Développement de l'appli Blackpills, permettant de découvrir et visionner des mini séries originales à consommer sur mobile.",
+          descriptionHtml = "Développement de l'appli <a href=\"https://play.google.com/store/apps/details?id=com.blackpills\">Blackpills</a>, permettant de découvrir et visionner des mini séries originales à consommer sur mobile.",
+        ),
         ExperienceItem("Démarrage du projet avec 2 autres développeurs (100% Kotlin)."),
         ExperienceItem("Aspect UI/UX très important."),
         ExperienceItem("Mise en place du paiement, publicité, mode hors ligne (téléchargement de vidéos), et plus."),
@@ -393,7 +417,10 @@ object ExperienceRepository {
         id = "fr.familyandco",
       ),
       items = listOf(
-        ExperienceItem("Développement sur l'appli FamilyWall qui aide à s'organiser, communiquer et partager en famille."),
+        ExperienceItem(
+          descriptionPlain = "Développement sur l'appli FamilyWall qui aide à s'organiser, communiquer et partager en famille.",
+          descriptionHtml = "Développement sur l'appli <a href=\"https://play.google.com/store/apps/details?id=com.familywall\">FamilyWall</a> qui aide à s'organiser, communiquer et partager en famille.",
+        ),
         ExperienceItem("Aspect UI/UX très important."),
         ExperienceItem("Réalisation d'un calendrier complet avec vues \"mois\" et \"prochains évènements\"."),
         ExperienceItem("Communication avec l'API REST/JSON."),
@@ -426,7 +453,10 @@ object ExperienceRepository {
         id = "fr.plizy",
       ),
       items = listOf(
-        ExperienceItem("Développement de l'appli Plizy pour tablettes, un agrégateur personnalisé et player vidéo."),
+        ExperienceItem(
+          descriptionPlain = "Développement de l'appli Plizy pour tablettes, un agrégateur personnalisé et player vidéo.",
+          descriptionHtml = "Développement de l'appli <a href=\"https://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/\">Plizy</a> pour tablettes, un agrégateur personnalisé et player vidéo.",
+        ),
         ExperienceItem("Mise en place et responsabilité du projet de la création jusqu'à la publication sur le Play Store."),
         ExperienceItem("Communication avec l'API REST/JSON."),
         ExperienceItem("Player vidéo utilisant une VideoView ou une WebView selon le provider (YouTube, Vimeo, Dailymotion, etc.)."),
@@ -461,8 +491,6 @@ object ExperienceRepository {
         ExperienceItem("Développement sur l'appli Phonebook 2.0 pour Android, un carnet d'adresses synchronisé et social."),
         ExperienceItem("Conception et réalisation d'un moteur générique s'intégrant avec divers réseaux sociaux (Twitter, Facebook, LinkedIn, MySpace, etc.) et encadrement de développeurs réalisant des connecteurs pour ce moteur."),
         ExperienceItem("Fonctionnalités de présence / chat avec le protocole RCS."),
-        ExperienceItem("Développement côté serveur sur le produit PIM (carnet d'adresses, calendrier, tâches, photos / vidéos, etc. synchronisés)."),
-        ExperienceItem("Customisations pour les clients : T-Mobile, Bouygues Telecom, Orange, Telstra."),
       ),
       environment = listOf(
         "Android",
@@ -489,27 +517,8 @@ object ExperienceRepository {
       organization = Organization(
         id = "fr.oalia",
       ),
-      items = listOf(
-        ExperienceItem("Maintenance et évolutions sur le Framework interne."),
-        ExperienceItem("Développement sur les produits OSRM / OSPM v3 et v4, des progiciels de gestion d’achats."),
-        ExperienceItem("Conception et développement du module Portail Fournisseur (application distante communiquant en Web Services)."),
-      ),
-      environment = listOf(
-        "Java",
-        "J2EE",
-        "Hibernate",
-        "Turbine",
-        "Velocity",
-        "Ajax",
-        "SOAP",
-        "Axis",
-        "Oracle",
-        "Tomcat",
-        "Weblogic",
-        "Subversion",
-        "Maven",
-        "Eclipse",
-      ),
+      items = emptyList(),
+      environment = emptyList(),
     ),
 
     Experience(
@@ -521,22 +530,8 @@ object ExperienceRepository {
       organization = Organization(
         id = "fr.pegasis",
       ),
-      items = listOf(
-        ExperienceItem("Développement d'applications Web (internet/intranet) pour les clients : France Télécom, l'Apec, Casino, Le Mémorial de la Shoah, Planète TP."),
-        ExperienceItem("Utilisation du framework interne Pegasis (Modèle MVC2) et de l'outil de gestion de contenu Délia."),
-      ),
-      environment = listOf(
-        "Java",
-        "J2EE (JSP/Servlets/Taglibs)",
-        "Tiles",
-        "SQL",
-        "Oracle",
-        "CVS",
-        "Tomcat",
-        "Ant",
-        "IntelliJ",
-        "Eclipse",
-      ),
+      items = emptyList(),
+      environment = emptyList(),
     ),
 
     Experience(
@@ -548,24 +543,8 @@ object ExperienceRepository {
       organization = Organization(
         id = "fr.icom",
       ),
-      items = listOf(
-        ExperienceItem("Développement sur les applications web et Swing."),
-        ExperienceItem("Portage en Java d'un interpréteur d'un langage de scripting."),
-      ),
-      environment = listOf(
-        "Java",
-        "JSP/Servlets",
-        "Applets",
-        "Swing",
-        "Java web start",
-        "JavaCC",
-        "XML",
-        "LDAP",
-        "SSL",
-        "Visual SourceSafe",
-        "Ant",
-        "IntelliJ",
-      ),
+      items = emptyList(),
+      environment = emptyList(),
     ),
   )
 
