@@ -29,19 +29,19 @@ object EducationRepository {
         start = PeriodStartDate("1996"),
         end = PeriodEndDate("1998"),
       ),
-      degree = "D.U.T. informatique (Diplôme Universitaire Technologique)",
+      degree = "D.U.T. informatique (Diplôme Universitaire Technologique in computer science), Software Engineering option",
       institution = Institution(
         name = "I.U.T. of Vélizy",
         location = "France",
         website = "http://www.uvsq.fr/",
       ),
-      moreInfoPlain = "Software Engineering option",
+      moreInfoPlain = null,
     ),
     EducationEntry(
       periodOrYear = Year("1996"),
-      degree = "Baccalauréat",
+      degree = "Baccalauréat, Science series, Mathematics option",
       institution = null,
-      moreInfoPlain = "Science series, Mathematics option",
+      moreInfoPlain = null,
     ),
   )
 
@@ -65,19 +65,19 @@ object EducationRepository {
         start = PeriodStartDate("1996"),
         end = PeriodEndDate("1998"),
       ),
-      degree = "Diplôme Universitaire Technologique informatique",
+      degree = "Diplôme Universitaire Technologique informatique, option Génie Informatique",
       institution = Institution(
         name = "I.U.T. de Vélizy",
         location = "Vélizy",
         website = "http://www.uvsq.fr/",
       ),
-      moreInfoPlain = "Option Génie Informatique",
+      moreInfoPlain = null,
     ),
     EducationEntry(
       periodOrYear = Year("1996"),
-      degree = "Baccalauréat général",
+      degree = "Baccalauréat général, série Scientifique, option Mathématiques",
       institution = null,
-      moreInfoPlain = "Série Scientifique, option Mathématiques",
+      moreInfoPlain = null,
     ),
   )
 

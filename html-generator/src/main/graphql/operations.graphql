@@ -1,0 +1,79 @@
+query Resume($language: Language!) {
+  meta {
+    lastModified
+  }
+  resume(language: $language) {
+    title
+    identity {
+      firstName
+      lastName
+      birthDate
+      age
+      nationality
+      email
+      website
+      phoneNumber {
+        countryCode
+        number
+      }
+      address {
+        addressLines
+      }
+    }
+    experience {
+      period {
+        start {
+          date
+        }
+        end {
+          date
+        }
+      }
+      jobTitle
+      organization {
+        name
+        description
+        location
+        website
+        moreInfo(format: HTML)
+      }
+      items {
+        description(format: HTML)
+      }
+      environment
+    }
+    education {
+      degree
+      moreInfo(format: HTML)
+      periodOrYear {
+        ... on Period {
+          start {
+            date
+          }
+
+          end {
+            date
+          }
+        }
+        ... on Year {
+          year
+        }
+      }
+      institution {
+        name
+        location
+        website
+      }
+    }
+    skills {
+      name
+      items {
+        description
+      }
+    }
+    misc {
+      description
+      links
+    }
+  }
+}

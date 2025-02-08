@@ -5,6 +5,7 @@ import org.jraf.graphqlresume.resume.model.Resume
 
 object ResumeRepository {
   private val englishResume = Resume(
+    title = "Software Engineer",
     identity = IdentityRepository.getIdentity(Language.EN),
     experience = ExperienceRepository.getExperience(Language.EN),
     education = EducationRepository.getEducation(Language.EN),
@@ -13,6 +14,7 @@ object ResumeRepository {
   )
 
   private val frenchResume = Resume(
+    title = "Ingénieur Logiciel",
     identity = IdentityRepository.getIdentity(Language.FR),
     experience = ExperienceRepository.getExperience(Language.FR),
     education = EducationRepository.getEducation(Language.FR),

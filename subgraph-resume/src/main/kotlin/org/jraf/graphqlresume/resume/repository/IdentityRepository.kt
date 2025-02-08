@@ -21,6 +21,7 @@ object IdentityRepository {
     email = "BoD@JRAF.org",
     phoneNumber = PhoneNumber(33, "6 07 17 00 95"),
     address = Address(listOf("Lyon", "France")),
+    website = "https://JRAF.org/",
   )
 
   private val frenchIdentity = englishIdentity.copy(

@@ -10,6 +10,7 @@ type Meta {
 }
 
 type Resume {
+    title: String!
     identity: Identity!
     experience: [Experience!]!
     education: [EducationEntry!]!
@@ -25,6 +26,7 @@ type Identity {
     nationality: Nationality!
     email: Email!
     phoneNumber: PhoneNumber!
+    website: Url!
     address: Address!
 }
 

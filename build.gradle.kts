@@ -1,8 +1,9 @@
 plugins {
   id("org.springframework.boot") version "3.0.0" apply false
   id("io.spring.dependency-management") version "1.1.0" apply false
-  kotlin("jvm") version "1.7.21" apply false
-  kotlin("plugin.spring") version "1.7.21" apply false
+  kotlin("jvm") version "2.1.10" apply false
+  kotlin("plugin.spring") version "2.1.10" apply false
+  id("com.apollographql.apollo") version "4.1.1" apply false
 }
 
 group = "org.jraf"

@@ -15,10 +15,10 @@ data class EducationEntry(
   val periodOrYear: PeriodOrYear,
   val degree: String,
   val institution: Institution?,
-  val moreInfoPlain: String,
-  val moreInfoHtml: String = moreInfoPlain,
+  val moreInfoPlain: String?,
+  val moreInfoHtml: String? = moreInfoPlain,
 ) {
-  fun getMoreInfo(e: DataFetchingEnvironment): String {
+  fun getMoreInfo(e: DataFetchingEnvironment): String? {
     return when (TextFormat.valueOf(e.getArgument("format"))) {
       TextFormat.PLAIN_TEXT -> moreInfoPlain
       TextFormat.HTML -> moreInfoHtml

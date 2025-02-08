@@ -11,6 +11,7 @@ data class Identity(
   val email: String,
   val phoneNumber: PhoneNumber,
   val address: Address,
+  val website: String,
 )
 
 data class Address(

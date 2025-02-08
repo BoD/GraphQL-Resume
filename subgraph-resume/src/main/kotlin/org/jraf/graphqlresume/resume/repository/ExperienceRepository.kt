@@ -21,12 +21,11 @@ object ExperienceRepository {
       ),
       items = listOf(
         ExperienceItem(
-          descriptionPlain = "New features and maintenance on the open source project Apollo Kotlin, a GraphQL client library.",
-          descriptionHtml = "New features and maintenance on the open source project <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, a GraphQL client library.",
+          descriptionPlain = "New features and maintenance on the open source project Apollo Kotlin, a GraphQL client library for Android and Kotlin.",
+          descriptionHtml = "New features and maintenance on the open source project <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, a GraphQL client library used by major Android apps (Netflix, X, Reddit, GitHub, …).",
         ),
-        ExperienceItem("Library used by major Android apps: Netflix, X, Reddit, GitHub, ..."),
-        ExperienceItem("Development of a plugin for Android Studio / IntelliJ."),
         ExperienceItem("Focus on the caching features and performance."),
+        ExperienceItem("Development of a plugin for Android Studio / IntelliJ."),
         ExperienceItem("Team of 2 developers, with contributions from the community."),
       ),
       environment = listOf(
@@ -54,7 +53,10 @@ object ExperienceRepository {
           descriptionPlain = "New features and maintenance on the Qonto banking app.",
           descriptionHtml = "New features and maintenance on the <a href=\"https://qonto.com/\">Qonto</a> banking app.",
         ),
-        ExperienceItem("Strong focus on architecture; core modules and services; keeping the codebase maintainable, clean and modern; team best practices and documentation; newcomer training; tooling; R&D; etc."),
+        ExperienceItem(
+          descriptionPlain = "Strong focus on architecture; core modules and services; keeping the codebase maintainable, clean and modern; team best practices and documentation; newcomer training; tooling; R&D; etc.",
+          descriptionHtml = "Strong focus on architecture; core modules and services; keeping the codebase maintainable, clean and modern; team best practices and documentation; newcomer training; tooling; R&amp;D; etc.",
+        ),
         ExperienceItem("Team grew from 3 to 10 developers."),
       ),
       environment = listOf(
@@ -291,12 +293,11 @@ object ExperienceRepository {
       ),
       items = listOf(
         ExperienceItem(
-          descriptionPlain = "Nouvelles fonctionnalités et maintenance sur le projet open source Apollo Kotlin, une librarie client GraphQL.",
-          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur le projet open source <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, une librairie client GraphQL.",
+          descriptionPlain = "Nouvelles fonctionnalités et maintenance sur le projet open source Apollo Kotlin, une librarie client GraphQL pour Android et Kotlin.",
+          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur le projet open source <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, une librairie client GraphQL utilisée par des applis Android majeures (Netflix, X, Reddit, Deezer, …).",
         ),
-        ExperienceItem("Librairie utilisée par des applis Android majeures: Netflix, X, Reddit, Deezer, ..."),
+        ExperienceItem("Focus sur les fonctionnalités de cache et la performance."),
         ExperienceItem("Développement d'un plugin pour Android Studio / IntelliJ."),
-        ExperienceItem("Concentration sur les fonctionnalités de cache et la performance."),
         ExperienceItem("Équipe de 2 développeurs, avec des contributions de la communauté."),
       ),
       environment = listOf(
@@ -312,8 +313,8 @@ object ExperienceRepository {
 
     Experience(
       period = Period(
-        start = PeriodStartDate("Sep. 2018"),
-        end = PeriodEndDate(null),
+        start = PeriodStartDate("2018"),
+        end = PeriodEndDate("2021"),
       ),
       jobTitle = "Expert Android",
       organization = Organization(
@@ -324,7 +325,10 @@ object ExperienceRepository {
           descriptionPlain = "Nouvelles fonctionnalités et maintenance sur l'appli bancaire Qonto.",
           descriptionHtml = "Nouvelles fonctionnalités et maintenance sur l'appli bancaire <a href=\"https://qonto.com/\">Qonto</a>.",
         ),
-        ExperienceItem("Concentration sur l'architecture ; le socle, les modules et services core ; garder la codebase maintenable, propre et moderne ; bonnes pratiques de l'équipe et documentation ; formation des nouvelles recrues ; outillage ; R&D; etc."),
+        ExperienceItem(
+          descriptionPlain = "Concentration sur l'architecture ; le socle, les modules et services core ; garder la codebase maintenable, propre et moderne ; bonnes pratiques de l'équipe et documentation ; formation des nouvelles recrues ; outillage ; R&D; etc.",
+          descriptionHtml = "Concentration sur l'architecture ; le socle, les modules et services core ; garder la codebase maintenable, propre et moderne ; bonnes pratiques de l'équipe et documentation ; formation des nouvelles recrues ; outillage ; R&amp;D; etc.",
+        ),
         ExperienceItem("Équipe ayant évolué de 3 à 10 développeurs."),
       ),
       environment = listOf(
