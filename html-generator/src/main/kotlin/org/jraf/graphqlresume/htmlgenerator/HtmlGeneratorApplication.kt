@@ -2,7 +2,6 @@ package org.jraf.graphqlresume.htmlgenerator
 
 import com.apollographql.apollo.ApolloClient
 import kotlinx.html.BODY
-import kotlinx.html.Entities
 import kotlinx.html.HEADER
 import kotlinx.html.SECTION
 import kotlinx.html.a
@@ -126,7 +125,7 @@ private fun HEADER.identity(identity: ResumeQuery.Identity, language: Language) 
     address {
       strong {
         +identity.firstName
-        +Entities.nbsp
+        +" "
         +identity.lastName
       }
       identity.address.addressLines.forEach {
