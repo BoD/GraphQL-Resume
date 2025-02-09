@@ -22,10 +22,13 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "New features and maintenance on the open source project Apollo Kotlin, a GraphQL client library for Android and Kotlin.",
-          descriptionHtml = "New features and maintenance on the open source project <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, a GraphQL client library used by major Android apps (Netflix, X, Reddit, GitHub, …).",
+          descriptionHtml = "New features and maintenance on the open source project <a href=\"https://github.com/apollographql/apollo-kotlin\" target=\"_blank\">Apollo Kotlin</a>, a GraphQL client library used by major Android apps (Netflix, X, Reddit, GitHub, …).",
         ),
         ExperienceItem("Focus on the caching features and performance."),
-        ExperienceItem("Development of a plugin for Android Studio / IntelliJ."),
+        ExperienceItem(
+          descriptionPlain = "Development of a plugin for Android Studio / IntelliJ.",
+          descriptionHtml = "Development of a <a href=\"https://plugins.jetbrains.com/plugin/20645-apollo-graphql\" target=\"_blank\">plugin</a> for Android Studio / IntelliJ.",
+        ),
         ExperienceItem("Team of 2 developers, with contributions from the community."),
       ),
       environment = listOf(
@@ -33,9 +36,9 @@ object ExperienceRepository {
         "Kotlin Multiplatform",
         "Gradle",
         "Code generation",
+        "Coroutines",
         "SQLDelight",
         "Android Studio / IntelliJ",
-        "Coroutines",
       ),
     ),
 
@@ -51,7 +54,7 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "New features and maintenance on the Qonto banking app.",
-          descriptionHtml = "New features and maintenance on the <a href=\"https://qonto.com/\">Qonto</a> banking app.",
+          descriptionHtml = "New features and maintenance on the <a href=\"https://play.google.com/store/apps/details?id=eu.qonto.qonto\" target=\"_blank\">Qonto</a> banking app.",
         ),
         ExperienceItem(
           descriptionPlain = "Strong focus on architecture; core modules and services; keeping the codebase maintainable, clean and modern; team best practices and documentation; newcomer training; tooling; R&D; etc.",
@@ -120,7 +123,7 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Development of the Blackpills app, a browser and player for original mini series meant for mobile consumption.",
-          descriptionHtml = "Development of the <a href=\"https://play.google.com/store/apps/details?id=com.blackpills\">Blackpills</a> app, a browser and player for original mini series meant for mobile consumption.",
+          descriptionHtml = "Development of the <a href=\"https://play.google.com/store/apps/details?id=com.blackpills\" target=\"_blank\">Blackpills</a> app, a browser and player for original mini series meant for mobile consumption.",
         ),
         ExperienceItem("Started from scratch with 2 other Android developers (full Kotlin)."),
         ExperienceItem("Strong focus on the UI/UX."),
@@ -151,11 +154,10 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Development on the FamilyWall app, which helps users organize, communicate and share contents within their family.",
-          descriptionHtml = "Development on the <a href=\"https://play.google.com/store/apps/details?id=com.familywall\">FamilyWall</a> app, which helps users organize, communicate and share contents within their family.",
+          descriptionHtml = "Development on the <a href=\"https://play.google.com/store/apps/details?id=com.familywall\" target=\"_blank\">FamilyWall</a> app, which helps users organize, communicate and share contents within their family.",
         ),
         ExperienceItem("Strong focus on the UI/UX."),
         ExperienceItem("Implemented a full-featured calendar with month and next events views."),
-        ExperienceItem("Communication with the REST/JSON API."),
         ExperienceItem("Customized the software for customers (branding, integration.)"),
       ),
       environment = listOf(
@@ -187,11 +189,10 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Development of the Plizy app for tablets, a video aggregator / player.",
-          descriptionHtml = "Development of the <a href=\"https://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/\">Plizy</a> app for tablets, a video aggregator / player.",
+          descriptionHtml = "Development of the <a href=\"https://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/\" target=\"_blank\">Plizy</a> app for tablets, a video aggregator / player.",
 
           ),
         ExperienceItem("Started from scratch and was responsible for the project from the inception to the publication on the Play Store."),
-        ExperienceItem("Communication with the REST/JSON API."),
         ExperienceItem("Developed a video player using a VideoView or a WebView depending on the provider (YouTube, Vimeo, Dailymotion, etc.)"),
         ExperienceItem("Designed and implemented an image caching mechanism for the thumbnails."),
       ),
@@ -294,10 +295,13 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Nouvelles fonctionnalités et maintenance sur le projet open source Apollo Kotlin, une librarie client GraphQL pour Android et Kotlin.",
-          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur le projet open source <a href=\"https://github.com/apollographql/apollo-kotlin\">Apollo Kotlin</a>, une librairie client GraphQL utilisée par des applis Android majeures (Netflix, X, Reddit, Deezer, …).",
+          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur le projet open source <a href=\"https://github.com/apollographql/apollo-kotlin\" target=\"_blank\">Apollo Kotlin</a>, une librairie client GraphQL utilisée par des applis Android majeures (Netflix, X, Reddit, Deezer, …).",
         ),
         ExperienceItem("Focus sur les fonctionnalités de cache et la performance."),
-        ExperienceItem("Développement d'un plugin pour Android Studio / IntelliJ."),
+        ExperienceItem(
+          descriptionPlain = "Développement d'un plugin pour Android Studio / IntelliJ.",
+          descriptionHtml = "Développement d'un <a href=\"https://plugins.jetbrains.com/plugin/20645-apollo-graphql\" target=\"_blank\">plugin</a> pour Android Studio / IntelliJ.",
+        ),
         ExperienceItem("Équipe de 2 développeurs, avec des contributions de la communauté."),
       ),
       environment = listOf(
@@ -305,9 +309,9 @@ object ExperienceRepository {
         "Kotlin Multiplatform",
         "Gradle",
         "Génération de code",
+        "Coroutines",
         "SQLDelight",
         "Android Studio / IntelliJ",
-        "Coroutines",
       ),
     ),
 
@@ -323,7 +327,7 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Nouvelles fonctionnalités et maintenance sur l'appli bancaire Qonto.",
-          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur l'appli bancaire <a href=\"https://qonto.com/\">Qonto</a>.",
+          descriptionHtml = "Nouvelles fonctionnalités et maintenance sur l'appli bancaire <a href=\"https://play.google.com/store/apps/details?id=eu.qonto.qonto\" target=\"_blank\">Qonto</a>.",
         ),
         ExperienceItem(
           descriptionPlain = "Concentration sur l'architecture ; le socle, les modules et services core ; garder la codebase maintenable, propre et moderne ; bonnes pratiques de l'équipe et documentation ; formation des nouvelles recrues ; outillage ; R&D; etc.",
@@ -392,7 +396,7 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Développement de l'appli Blackpills, permettant de découvrir et visionner des mini séries originales à consommer sur mobile.",
-          descriptionHtml = "Développement de l'appli <a href=\"https://play.google.com/store/apps/details?id=com.blackpills\">Blackpills</a>, permettant de découvrir et visionner des mini séries originales à consommer sur mobile.",
+          descriptionHtml = "Développement de l'appli <a href=\"https://play.google.com/store/apps/details?id=com.blackpills\" target=\"_blank\">Blackpills</a>, permettant de découvrir et visionner des mini séries originales à consommer sur mobile.",
         ),
         ExperienceItem("Démarrage du projet avec 2 autres développeurs (100% Kotlin)."),
         ExperienceItem("Aspect UI/UX très important."),
@@ -423,11 +427,10 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Développement sur l'appli FamilyWall qui aide à s'organiser, communiquer et partager en famille.",
-          descriptionHtml = "Développement sur l'appli <a href=\"https://play.google.com/store/apps/details?id=com.familywall\">FamilyWall</a> qui aide à s'organiser, communiquer et partager en famille.",
+          descriptionHtml = "Développement sur l'appli <a href=\"https://play.google.com/store/apps/details?id=com.familywall\" target=\"_blank\">FamilyWall</a> qui aide à s'organiser, communiquer et partager en famille.",
         ),
         ExperienceItem("Aspect UI/UX très important."),
         ExperienceItem("Réalisation d'un calendrier complet avec vues \"mois\" et \"prochains évènements\"."),
-        ExperienceItem("Communication avec l'API REST/JSON."),
         ExperienceItem("Customisations pour les clients (branding, intégration)."),
       ),
       environment = listOf(
@@ -459,10 +462,9 @@ object ExperienceRepository {
       items = listOf(
         ExperienceItem(
           descriptionPlain = "Développement de l'appli Plizy pour tablettes, un agrégateur personnalisé et player vidéo.",
-          descriptionHtml = "Développement de l'appli <a href=\"https://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/\">Plizy</a> pour tablettes, un agrégateur personnalisé et player vidéo.",
+          descriptionHtml = "Développement de l'appli <a href=\"https://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/\" target=\"_blank\">Plizy</a> pour tablettes, un agrégateur personnalisé et player vidéo.",
         ),
         ExperienceItem("Mise en place et responsabilité du projet de la création jusqu'à la publication sur le Play Store."),
-        ExperienceItem("Communication avec l'API REST/JSON."),
         ExperienceItem("Player vidéo utilisant une VideoView ou une WebView selon le provider (YouTube, Vimeo, Dailymotion, etc.)."),
         ExperienceItem("Implémentation d'un mécanisme de cache d'images pour les thumbnails."),
       ),

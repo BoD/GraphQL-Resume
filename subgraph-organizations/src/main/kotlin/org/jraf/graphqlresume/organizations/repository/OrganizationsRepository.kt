@@ -25,7 +25,7 @@ object OrganizationsRepository {
       website = "https://www.blablacar.com/",
       location = "Paris, France",
       moreInfoPlain = "now part of BlaBlaCar",
-      moreInfoHtml = "now part of <a href=\"https://www.blablacar.com/\">BlaBlaCar</a>",
+      moreInfoHtml = "now part of <a href=\"https://www.blablacar.com/\" target=\"_blank\">BlaBlaCar</a>",
     ),
     Organization(
       id = "en.blackpills",
@@ -101,7 +101,7 @@ object OrganizationsRepository {
       website = "https://www.less.com/",
       location = "Paris",
       moreInfoPlain = "acquis par BlaBlaCar",
-      moreInfoHtml = "acquis par <a href=\"https://www.blablacar.com/\">BlaBlaCar</a>",
+      moreInfoHtml = "acquis par <a href=\"https://www.blablacar.com/\" target=\"_blank\">BlaBlaCar</a>",
     ),
 
     Organization(

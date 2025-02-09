@@ -98,21 +98,21 @@ private fun BODY.topNavigation() {
         +"Web ("
         a(href = "https://jraf.org/blubek/index.html") { +"English" }
         +" "
-        a(href = "https://jraf.org/blubek/cv-fr.html") { +"French" }
+        a(href = "https://jraf.org/blubek/cv-fr.html") { +"Français" }
         +")"
       }
       li {
         +"PDF ("
         a(href = "https://jraf.org/blubek/benoit-lubek-resume-en.pdf") { +"English" }
         +" "
-        a(href = "https://jraf.org/blubek/benoit-lubek-cv-fr.pdf") { +"French" }
+        a(href = "https://jraf.org/blubek/benoit-lubek-cv-fr.pdf") { +"Français" }
         +")"
       }
       li {
         +"GraphQL ("
         a(href = "TODO") { +"English" }
         +" "
-        a(href = "TODO") { +"French" }
+        a(href = "TODO") { +"Français" }
         +")"
       }
     }

@@ -13,22 +13,21 @@ object SkillsRepository {
         SkillItem("Excellent knowledge of the Kotlin and Java languages."),
         SkillItem("Experience with C#, C++, and C."),
         SkillItem("IntelliJ/AS and Eclipse environments."),
-        SkillItem("Other skills: Shell, Perl, TCL, Pascal, Ada, assembly language."),
+        SkillItem("Other skills: Shell, Pascal, Ada, assembly language."),
       ),
     ),
     SkillCategory(
       name = "Server-side and web",
       items = listOf(
-        SkillItem("Frameworks: KTOR, JSP/Servlets, Struts, Turbine."),
-        SkillItem("Very good knowledge of HTML, CSS, Javascript, XML, XSL/T."),
-        SkillItem("Other skills: GraphQL, FreeMarker, PHP, Flash, Applets."),
+        SkillItem("Frameworks: Ktor, Spring Boot, JSP/Servlets."),
+        SkillItem("Very good knowledge of GraphQL, HTML/CSS, JavaScript."),
       ),
     ),
     SkillCategory(
       name = "Databases",
       items = listOf(
         SkillItem("SQL language; Oracle, MySQL and SQLite."),
-        SkillItem("JPA, Hibernate, JDBC, Realm."),
+        SkillItem("JPA, Hibernate, JDBC, SQLDelight, Room, Realm."),
       ),
     ),
     SkillCategory(
@@ -60,22 +59,21 @@ object SkillsRepository {
         SkillItem("Maîtrise des langages Kotlin et Java."),
         SkillItem("Connaissance des langages C#, C++, C."),
         SkillItem("Environnements IntelliJ/AS et Eclipse."),
-        SkillItem("Autres connaissances : Shell, Perl, TCL, Pascal, Ada, assembleur."),
+        SkillItem("Autres connaissances : Shell, Pascal, Ada, assembleur."),
       ),
     ),
     SkillCategory(
       name = "Côté serveur et web",
       items = listOf(
-        SkillItem("Frameworks: KTOR, JSP/Servlets, Struts, Turbine."),
-        SkillItem("Très bonne connaissance de HTML, CSS, Javascript, XML, XSL/T."),
-        SkillItem("Autres connaissances : GraphQL, FreeMarker, PHP, Flash, Applets."),
+        SkillItem("Frameworks: Ktor, Spring Boot, JSP/Servlets."),
+        SkillItem("Très bonne connaissance de GraphQL, HTML/CSS, JavaScript."),
       ),
     ),
     SkillCategory(
       name = "Bases de données",
       items = listOf(
         SkillItem("Langage SQL ; Oracle, MySQL et SQLite."),
-        SkillItem("JPA, Hibernate, JDBC, Realm."),
+        SkillItem("JPA, Hibernate, JDBC, SQLDelight, Room, Realm."),
       ),
     ),
     SkillCategory(

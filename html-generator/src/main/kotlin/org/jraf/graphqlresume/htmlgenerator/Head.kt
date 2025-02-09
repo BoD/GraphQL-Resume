@@ -14,11 +14,18 @@ val HEAD = """
         nav {
             display: none;
         }
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Tweaks so everything fits on 2 pages */
         :root:lang(en) {
-            font-size: 0.91rem;
+            font-size: 0.96rem;
         }
         :root:lang(fr) {
-            font-size: 0.91rem;
+            font-size: 0.97rem;
         }
     }
 
