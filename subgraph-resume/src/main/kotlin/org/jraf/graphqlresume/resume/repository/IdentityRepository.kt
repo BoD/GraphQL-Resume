@@ -20,12 +20,13 @@ object IdentityRepository {
     nationality = Nationality.FRANCE,
     email = "BoD@JRAF.org",
     phoneNumber = PhoneNumber(33, "6 07 17 00 95"),
-    address = Address(listOf("19 avenue de Choisy apt 4024", "75013", "Paris", "France")),
+    address = Address(listOf("Lyon, France")),
+    website = "https://JRAF.org/",
   )
 
   private val frenchIdentity = englishIdentity.copy(
     phoneNumber = PhoneNumber(null, "06 07 17 00 95"),
-    address = Address(listOf("19 avenue de Choisy apt 4024", "75013", "Paris")),
+    address = Address(listOf("Lyon")),
   )
 
   @Suppress("SameParameterValue")
