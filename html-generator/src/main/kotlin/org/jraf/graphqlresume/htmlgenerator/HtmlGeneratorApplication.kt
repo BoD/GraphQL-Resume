@@ -33,9 +33,9 @@ import java.io.File
 suspend fun main() {
   ApolloClient.Builder()
     // For local router
-    .serverUrl("http://localhost:4000/")
+//    .serverUrl("http://localhost:4000/")
     // For prod
-//    .serverUrl("http://server.jraf.org:4000/")
+    .serverUrl("http://server.jraf.org:4000/")
     .build()
     .use { apolloClient ->
       val enLanguage = Language.EN
@@ -110,9 +110,9 @@ private fun BODY.topNavigation() {
       }
       li {
         +"GraphQL ("
-        a(href = "TODO") { +"English" }
+        a(href = "http://server.jraf.org:4000/?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QGIAEAVACwEsBnHUnOATxwCcET4EAaHAQzLZwHFa2AHAgEUAMjgCCABQCSAOgA6SXACEEUNjBIIcAdwI0kEFAH5FuQtpIQYtKNqgQw2imwBubIgBs2AI0-aCBHp0MxwCFBR%2BEnQAehiAcyIUAhgfWQc4GOUIABEY3gFhEQBaACUGJjNQgFEkACsIKgBCRUUARxggmnLGRAAKABJvJHiYNniEdBwRNhGxiaaAShxgRRxKBBQuVaR19e8SFABZRyIAMyIEMDWcAF8b%2Bl6EPuHR8cmcIdm3ieWdvZwKCS-hu6yITlQSRo-wBOAutEOADk2IhQXsDihkajdrCfERaMkcmwUAg0et3mScEhiUQINTPFDKQg4B5PJSdAgfCQkqScQDBHSEIj4D4gitKesHDBULQqABhRy82F7JAioKU%2B58vZsMBgR5kGHKnV6hgkEREJAMDVozUAhAAD34QUuSDs4q16ydtFpYHdyvWhzYBL9-vWYGJSv9tv9yF9hv94ZJEru1o9OAaPjwwMjAIgtHisyIAC8aXSQ8rqdjQ04SFBvfwgXTk55oKWkMmOVyecm4HmENIkGcIKnlTy4AbkzW60QG7T22no3akK58XTEKgbWirjB1I3dvGwwh4vQc3te-QB0PKV6fQB5WgATQQQfLsNk75wZckzscr%2BVgeDA8EwjZN1k1UCcFjP9gKTNMAUXWEEIBd9ZE-XYnxfICASoZ9aGTJCUzTC1DiSGA92g9ZK1PAEW13OcO05blYOVBCEJIABrLxPAnNMqMpMceOrBhp1nJsF03LU4FIKBoKnes90pBkkHYkgJLAxRNRAZgQHcb1fH8EgMBAGF5BAV55lJDAcFM6pEVM5gNJAW4gA") { +"English" }
         +" "
-        a(href = "TODO") { +"Français" }
+        a(href = "http://server.jraf.org:4000/?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QGIAEA1CASykJzgiRwGE8cBnCGOnAGwEMcAzCAJ0RzAByGEgQ4AggAUAkjgDiPNgAcAFgEUAMgDoAOklyS2PKGICOMMUsY9zRHErZ0A-HtwaxUCGDEMYxsQh0KAKEdFZIhABGLGLEpOiuOCooKEp06AD0GQDmhCgqMJFannAZAEIQACIZCsrqGgC0AEqB8AiuieJwTAgAXg0AbozMkYTIOACEenrmCDwAnjgtdG0AFAAk7EjZMGzZCOg4Gmzbu-sTAJQ4wHo4ZAgoHDeUd6yOKACyXoScY2C3OAAvgCeK1EKstjs9gccJsTlD9ldnq8cCg8jEAXdCN5UHlFsiUVxCDwggA5NiITGvdhkintF4o0Y8fKVNgoemEnDQql3JBswgUNgsPE8nAIOBsQgsUUAdwQkToeQ5hNUFAQpPgkTm11Fd08IhQCyoXmVnKQmrmouBDNebDAYFBdGYBM5dodgToGkIojoVqp1pRCAAHko5mMkCYdTa7qGeAKwFHOXcgkZgi6k2A2abCQGk8gE%2BnOZn2bqgX7ozgAFYQSIAFXR2buvGyJ0IvX5FETSb5lIrd28dCgcaUaIopZY0A7SFLcoVStL5FB0iQ3HLnKVcGdpYHQ8II4F04rucDSAGxIoiFQ-qpCDAMCgU67KO82VBjbIvAQy9XFdj8YA8jwACaCBGE%2BhJaJBOCdpIYZeOBnIpsyCEZlmpZ3Na6FikgBZYf2aF9q8x45qWkFaNBlAgWBhaEvMoE8KWxEYaK3pBHkMCjpQNG8nS46TpxM7yoqJZHteNp0AA1lKLBbhWPbvhuslJgIgS7vuY6iTaxFwKEUAoTuw4CRWwpIBJvpaQC1rWiAAA0IADEYhBsNEgQYCABI6CAkJnO0GA4J5ABiTSeTZeiAiAgJAA") { +"Français" }
         +")"
       }
     }

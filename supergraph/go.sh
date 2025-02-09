@@ -14,6 +14,10 @@ if [ ! -f router ]; then
     curl -sSL https://router.apollo.dev/download/nix/latest | sh
 fi
 
+# Push the subgraph schemas to Apollo Studio
+yes | $HOME/.rover/bin/rover subgraph publish $APOLLO_GRAPH_REF --name resume --schema ../subgraph-resume/src/main/resources/graphql/resume.graphqls
+yes | $HOME/.rover/bin/rover subgraph publish $APOLLO_GRAPH_REF --name organizations --schema ../subgraph-organizations/src/main/resources/graphql/organizations.graphqls
+
 # Run the subgraphs in background
 ../subgraph-resume/build/install/subgraph-resume/bin/subgraph-resume &
 sleep 5
