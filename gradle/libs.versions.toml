@@ -1,0 +1,26 @@
+[versions]
+apollo = "5.0.1"
+federation = "6.1.0"
+kotlin = "2.4.10"
+kotlinx-html = "0.12.0"
+spring-boot = "4.1.0"
+spring-dependency-management = "1.1.7"
+
+[libraries]
+apollo-runtime = { module = "com.apollographql.apollo:apollo-runtime", version.ref = "apollo" }
+federation-graphql-java-support = { module = "com.apollographql.federation:federation-graphql-java-support", version.ref = "federation" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+kotlinx-html = { module = "org.jetbrains.kotlinx:kotlinx-html", version.ref = "kotlinx-html" }
+spring-boot-starter-graphql = { module = "org.springframework.boot:spring-boot-starter-graphql" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-graphql-test = { module = "org.springframework.graphql:spring-graphql-test" }
+spring-webflux = { module = "org.springframework:spring-webflux" }
+
+[plugins]
+apollo = { id = "com.apollographql.apollo", version.ref = "apollo" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }

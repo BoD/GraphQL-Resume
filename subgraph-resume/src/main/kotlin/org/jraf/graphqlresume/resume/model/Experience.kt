@@ -15,7 +15,7 @@ data class ExperienceItem(
   val descriptionHtml: String = descriptionPlain,
 ) {
   fun getDescription(e: DataFetchingEnvironment): String {
-    return when (TextFormat.valueOf(e.getArgument("format"))) {
+    return when (TextFormat.valueOf(e.getArgument<String>("format") ?: TextFormat.PLAIN_TEXT.name)) {
       TextFormat.PLAIN_TEXT -> descriptionPlain
       TextFormat.HTML -> descriptionHtml
     }
@@ -29,4 +29,3 @@ data class Experience(
   val items: List<ExperienceItem>,
   val environment: List<String>,
 )
-

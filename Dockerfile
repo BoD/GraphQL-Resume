@@ -1,4 +1,4 @@
-FROM openjdk:17.0.2-slim
+FROM eclipse-temurin:17-jdk
 LABEL maintainer="BoD <BoD@JRAF.org>"
 WORKDIR /app
 

@@ -8,7 +8,7 @@ data class MiscItem(
   val links: List<String> = emptyList(),
 ) {
   fun getDescription(e: DataFetchingEnvironment): String {
-    return when (TextFormat.valueOf(e.getArgument("format"))) {
+    return when (TextFormat.valueOf(e.getArgument<String>("format") ?: TextFormat.PLAIN_TEXT.name)) {
       TextFormat.PLAIN_TEXT -> descriptionPlain
       TextFormat.HTML -> descriptionHtml
     }

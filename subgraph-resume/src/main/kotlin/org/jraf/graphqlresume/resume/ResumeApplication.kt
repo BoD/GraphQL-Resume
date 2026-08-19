@@ -11,7 +11,7 @@ import org.jraf.graphqlresume.resume.model.Url
 import org.jraf.graphqlresume.resume.repository.MetaRepository
 import org.jraf.graphqlresume.resume.repository.ResumeRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.autoconfigure.graphql.GraphQlSourceBuilderCustomizer
+import org.springframework.boot.graphql.autoconfigure.GraphQlSourceBuilderCustomizer
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.graphql.data.method.annotation.Argument

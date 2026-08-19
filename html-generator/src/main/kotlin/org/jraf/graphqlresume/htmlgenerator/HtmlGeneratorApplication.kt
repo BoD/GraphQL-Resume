@@ -66,7 +66,6 @@ private fun html(resume: ResumeQuery.Resume, language: Language): String {
         +when (language) {
           Language.EN -> "Resume ${resume.identity.firstName} ${resume.identity.lastName}"
           Language.FR -> "Curriculum Vitae ${resume.identity.firstName} ${resume.identity.lastName}"
-          else -> error()
         }
       }
     }

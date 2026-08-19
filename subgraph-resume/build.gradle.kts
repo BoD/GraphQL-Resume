@@ -1,30 +1,31 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  id("org.springframework.boot")
-  id("io.spring.dependency-management")
-  kotlin("jvm")
-  kotlin("plugin.spring")
+  alias(libs.plugins.spring.boot)
+  alias(libs.plugins.spring.dependency.management)
+  alias(libs.plugins.kotlin.jvm)
+  alias(libs.plugins.kotlin.spring)
   application
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 dependencies {
-  implementation("org.springframework.boot:spring-boot-starter-graphql")
-  implementation("org.springframework.boot:spring-boot-starter-web")
-  implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-  implementation("org.jetbrains.kotlin:kotlin-reflect")
-  implementation("com.apollographql.federation:federation-graphql-java-support:2.1.1")
-  testImplementation("org.springframework.boot:spring-boot-starter-test")
-  testImplementation("org.springframework:spring-webflux")
-  testImplementation("org.springframework.graphql:spring-graphql-test")
+  implementation(libs.spring.boot.starter.graphql)
+  implementation(libs.spring.boot.starter.web)
+  implementation(libs.jackson.module.kotlin)
+  implementation(libs.kotlin.reflect)
+  implementation(libs.federation.graphql.java.support)
+  testImplementation(libs.spring.boot.starter.test)
+  testImplementation(libs.spring.webflux)
+  testImplementation(libs.spring.graphql.test)
 }
 
 tasks.withType<KotlinCompile> {
-  kotlinOptions {
-    freeCompilerArgs = listOf("-Xjsr305=strict")
-    jvmTarget = "17"
+  compilerOptions {
+    freeCompilerArgs.add("-Xjsr305=strict")
+    jvmTarget.set(JvmTarget.JVM_17)
   }
 }
 

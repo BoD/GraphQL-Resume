@@ -1,22 +1,23 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-  kotlin("jvm")
+  alias(libs.plugins.kotlin.jvm)
   application
-  id("com.apollographql.apollo")
+  alias(libs.plugins.apollo)
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 dependencies {
-  implementation("com.apollographql.apollo:apollo-runtime:4.1.1")
-  implementation("org.jetbrains.kotlinx:kotlinx-html:0.12.0")
+  implementation(libs.apollo.runtime)
+  implementation(libs.kotlinx.html)
 }
 
 tasks.withType<KotlinCompile> {
-  kotlinOptions {
-    freeCompilerArgs = listOf("-Xjsr305=strict")
-    jvmTarget = "17"
+  compilerOptions {
+    freeCompilerArgs.add("-Xjsr305=strict")
+    jvmTarget.set(JvmTarget.JVM_17)
   }
 }
 

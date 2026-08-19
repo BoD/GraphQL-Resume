@@ -1,9 +1,9 @@
 plugins {
-  id("org.springframework.boot").version("3.0.0").apply(false)
-  id("io.spring.dependency-management").version("1.1.0").apply(false)
-  kotlin("jvm").version("2.1.10").apply(false)
-  kotlin("plugin.spring").version("2.1.10").apply(false)
-  id("com.apollographql.apollo").version("4.1.1").apply(false)
+  alias(libs.plugins.spring.boot).apply(false)
+  alias(libs.plugins.spring.dependency.management).apply(false)
+  alias(libs.plugins.kotlin.jvm).apply(false)
+  alias(libs.plugins.kotlin.spring).apply(false)
+  alias(libs.plugins.apollo).apply(false)
 }
 
 group = "org.jraf"

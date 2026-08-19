@@ -9,7 +9,7 @@ import org.jraf.graphqlresume.organizations.model.Organization
 import org.jraf.graphqlresume.organizations.model.Url
 import org.jraf.graphqlresume.organizations.repository.OrganizationsRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.autoconfigure.graphql.GraphQlSourceBuilderCustomizer
+import org.springframework.boot.graphql.autoconfigure.GraphQlSourceBuilderCustomizer
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 import org.springframework.graphql.execution.RuntimeWiringConfigurer
@@ -31,7 +31,7 @@ class GraphQlConfig {
   @Bean
   fun federationTransform(): GraphQlSourceBuilderCustomizer {
     val entityDataFetcher: DataFetcher<*> = DataFetcher { env ->
-      val representations: List<Map<String, Any>> = env.getArgument(_Entity.argumentName)
+      val representations = env.getArgument<List<Map<String, Any>>>(_Entity.argumentName).orEmpty()
       representations.map { representation ->
         if (representation["__typename"] == "Organization") {
           OrganizationsRepository.getOrganization(representation["id"] as String)
