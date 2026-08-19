@@ -39,3 +39,4 @@ out/
 ### Misc ###
 router
 resume-supergraph.graphqls
+versions.properties

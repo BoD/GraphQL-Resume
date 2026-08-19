@@ -7,16 +7,16 @@ spring-boot = "4.1.0"
 spring-dependency-management = "1.1.7"
 
 [libraries]
-apollo-runtime = { module = "com.apollographql.apollo:apollo-runtime", version.ref = "apollo" }
-federation-graphql-java-support = { module = "com.apollographql.federation:federation-graphql-java-support", version.ref = "federation" }
-jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
-kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
-kotlinx-html = { module = "org.jetbrains.kotlinx:kotlinx-html", version.ref = "kotlinx-html" }
-spring-boot-starter-graphql = { module = "org.springframework.boot:spring-boot-starter-graphql" }
-spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
-spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
-spring-graphql-test = { module = "org.springframework.graphql:spring-graphql-test" }
-spring-webflux = { module = "org.springframework:spring-webflux" }
+apollo-runtime = { group = "com.apollographql.apollo", name = "apollo-runtime", version.ref = "apollo" }
+federation-graphql-java-support = { group = "com.apollographql.federation", name = "federation-graphql-java-support", version.ref = "federation" }
+jackson-module-kotlin = { group = "com.fasterxml.jackson.module", name = "jackson-module-kotlin" }
+kotlin-reflect = { group = "org.jetbrains.kotlin", name = "kotlin-reflect" }
+kotlinx-html = { group = "org.jetbrains.kotlinx", name = "kotlinx-html", version.ref = "kotlinx-html" }
+spring-boot-starter-graphql = { group = "org.springframework.boot", name = "spring-boot-starter-graphql" }
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test" }
+spring-boot-starter-web = { group = "org.springframework.boot", name = "spring-boot-starter-web" }
+spring-graphql-test = { group = "org.springframework.graphql", name = "spring-graphql-test" }
+spring-webflux = { group = "org.springframework", name = "spring-webflux" }
 
 [plugins]
 apollo = { id = "com.apollographql.apollo", version.ref = "apollo" }
