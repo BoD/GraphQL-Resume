@@ -11,23 +11,22 @@ object SkillsRepository {
       items = listOf(
         SkillItem("Excellent knowledge of the Android platform."),
         SkillItem("Excellent knowledge of the Kotlin and Java languages."),
-        SkillItem("Experience with C#, C++, and C."),
-        SkillItem("IntelliJ/AS and Eclipse environments."),
-        SkillItem("Other skills: Shell, Pascal, Ada, assembly language."),
+        SkillItem("IntelliJ / AS and Eclipse environments."),
+        SkillItem("Some experience with C#, C++, C, Shell, assembly language."),
       ),
     ),
     SkillCategory(
       name = "Server-side and web",
       items = listOf(
-        SkillItem("Frameworks: Ktor, Spring Boot, JSP/Servlets."),
-        SkillItem("Very good knowledge of GraphQL, HTML/CSS, JavaScript."),
+        SkillItem("Frameworks: Ktor, Spring Boot."),
+        SkillItem("Very good knowledge of GraphQL, HTML/CSS, JavaScript/TypeScript."),
       ),
     ),
     SkillCategory(
       name = "Databases",
       items = listOf(
-        SkillItem("SQL language; Oracle, MySQL and SQLite."),
-        SkillItem("JPA, Hibernate, JDBC, SQLDelight, Room, Realm."),
+        SkillItem("SQL; SQLite, MySQL, PostgreSQL."),
+        SkillItem("SQLDelight, Room, Realm, JDBC, JPA, Hibernate."),
       ),
     ),
     SkillCategory(
