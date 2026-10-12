@@ -7,7 +7,7 @@ plugins {
   alias(libs.plugins.apollo)
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_25
 
 dependencies {
   implementation(libs.apollo.runtime)
@@ -17,7 +17,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
   compilerOptions {
     freeCompilerArgs.add("-Xjsr305=strict")
-    jvmTarget.set(JvmTarget.JVM_17)
+    jvmTarget.set(JvmTarget.JVM_25)
   }
 }
 

@@ -7,8 +7,7 @@ Because why not?
 To push:
 
 ```shell
-JAVA_HOME=`/usr/libexec/java_home -v 17` gw dockerBuild
-docker push bodlulu/graphql-resume
+gw dockerBuild && docker push bodlulu/graphql-resume
 ```
 
 To use:

@@ -31,4 +31,7 @@ sleep 5
 # To use Apollo Studio instead, you need to set the following environment variables:
 # APOLLO_KEY=<your key>
 # APOLLO_GRAPH_REF=<your graph ref>
+# Note: OTEL_EXPORTER_OTLP_TRACES_ENDPOINT, OTEL_EXPORTER_OTLP_METRICS_ENDPOINT must not be set, the router doesn't like them.
+unset OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
+unset OTEL_EXPORTER_OTLP_METRICS_ENDPOINT
 ./router --log trace --dev --config router.yaml
